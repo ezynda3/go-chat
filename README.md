@@ -2,7 +2,7 @@
 
 This is a simple chat web app written in Go
 
-Just run the folowing
+Just run the following
 
 ```
 cd ./src
