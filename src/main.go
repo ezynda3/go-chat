@@ -17,7 +17,7 @@ var upgrader = websocket.Upgrader{
 	},
 }
 
-// Define our message object
+// Message object
 type Message struct {
 	Email    string `json:"email"`
 	Username string `json:"username"`
@@ -48,6 +48,7 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 	ws, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
 		log.Printf("error %v", err)
+		return
 	}
 	// Make sure we close the connection when the function returns
 	defer ws.Close()
