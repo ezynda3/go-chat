@@ -2,13 +2,7 @@
 
 This is a simple chat web app written in Go
 
-Install the dependecies
-
-```
-go get github.com/gorilla/websocket
-go get github.com/jteeuwen/go-bindata
-go get github.com/elazarl/go-bindata-assetfs
-```
+All dependencies are located in the vendor folder so Go 1.6+ is required.
 
 ### Normal Build
 
